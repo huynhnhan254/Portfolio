@@ -4,9 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Ngoc Nhan Huynh | Software Engineer</title>
 
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 
   <script>
     tailwind.config = {
@@ -19,679 +24,556 @@
       }
     }
   </script>
-
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background: #f8fafc;
-    }
-
-    .gradient-text {
-      background: linear-gradient(90deg, #60a5fa, #a78bfa);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .project-card {
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
-
-    .project-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
-    }
-
-    .skill-tag {
-      transition: all 0.2s ease;
-    }
-
-    .skill-tag:hover {
-      transform: translateY(-2px);
-    }
-  </style>
 </head>
 
 <body class="text-slate-800 font-sans">
 
-<!-- ================= HEADER ================= -->
+  <!-- ================= HEADER ================= -->
 
-<header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800">
-  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
 
-    <a href="#home" class="text-lg font-bold text-white">
-      Ngoc Nhan <span class="text-blue-400">Huynh</span>
-    </a>
+      <a href="#home" class="text-lg font-bold text-white">
+        Ngoc Nhan <span class="text-blue-400">Huynh</span>
+      </a>
 
-    <nav class="hidden md:flex items-center gap-8 text-sm text-slate-300">
-      <a href="#about" class="hover:text-white transition">About</a>
-      <a href="#projects" class="hover:text-white transition">Projects</a>
-      <a href="#skills" class="hover:text-white transition">Skills</a>
-      <a href="#contact" class="hover:text-white transition">Contact</a>
-    </nav>
+      <nav class="hidden md:flex items-center gap-8 text-sm text-slate-300">
+        <a href="#about" class="hover:text-white transition">About</a>
+        <a href="#projects" class="hover:text-white transition">Projects</a>
+        <a href="#skills" class="hover:text-white transition">Skills</a>
+        <a href="#contact" class="hover:text-white transition">Contact</a>
+      </nav>
 
-    <a
-      href="mailto:huynhnhan254@gmail.com"
-      class="hidden md:inline-block px-4 py-2 rounded-lg bg-blue-500 text-white text-sm font-medium hover:bg-blue-400 transition"
-    >
-      Let's Connect
-    </a>
+      <a
+        href="mailto:huynhnhan254@gmail.com"
+        class="hidden md:inline-block px-4 py-2 rounded-lg bg-blue-500 text-white text-sm font-medium hover:bg-blue-400 transition"
+      >
+        Let's Connect
+      </a>
 
-  </div>
-</header>
+    </div>
+  </header>
 
 
-<!-- ================= HERO ================= -->
+  <!-- ================= HERO ================= -->
 
-<section
-  id="home"
-  class="min-h-screen flex items-center bg-slate-950 text-white relative overflow-hidden"
->
+  <section
+    id="home"
+    class="min-h-screen flex items-center bg-slate-950 text-white relative overflow-hidden"
+  >
 
-  <!-- Background decoration -->
-  <div class="absolute inset-0 opacity-20">
-    <div class="absolute top-32 left-10 w-72 h-72 bg-blue-500 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-20 right-10 w-80 h-80 bg-indigo-500 rounded-full blur-3xl"></div>
-  </div>
+    <!-- Background decoration -->
+    <div class="absolute inset-0 opacity-20">
+      <div class="absolute top-32 left-10 w-72 h-72 bg-blue-500 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-20 right-10 w-80 h-80 bg-indigo-500 rounded-full blur-3xl"></div>
+    </div>
 
-  <div class="max-w-6xl mx-auto px-6 py-32 relative z-10 w-full">
+    <div class="max-w-6xl mx-auto px-6 py-32 relative z-10 w-full">
 
-    <div class="max-w-3xl">
+      <div class="max-w-3xl">
 
-      <p class="text-blue-400 font-medium mb-5 tracking-wide">
-        SOFTWARE ENGINEER
-      </p>
+        <p class="text-blue-400 font-medium mb-5 tracking-wide">
+          SOFTWARE ENGINEER
+        </p>
 
-      <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6">
-        Building reliable
-        <span class="gradient-text">backend systems.</span>
-      </h1>
+        <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6">
+          Building reliable
+          <span class="gradient-text">backend systems.</span>
+        </h1>
 
-      <p class="text-lg md:text-xl text-slate-400 leading-relaxed max-w-2xl mb-8">
-        Computer Science graduate focused on backend development,
-        REST APIs, Java, Spring Boot, and scalable software architecture.
-      </p>
+        <p class="text-lg md:text-xl text-slate-400 leading-relaxed max-w-2xl mb-8">
+          Computer Science graduate focused on backend development,
+          REST APIs, Java, Spring Boot, and scalable software architecture.
+        </p>
 
-      <div class="flex flex-wrap gap-4">
+        <div class="flex flex-wrap gap-4">
 
-        <a
-          href="#projects"
-          class="px-6 py-3 bg-blue-500 hover:bg-blue-400 rounded-lg font-medium transition"
-        >
-          View My Projects
-        </a>
+          <a
+            href="#projects"
+            class="px-6 py-3 bg-blue-500 hover:bg-blue-400 rounded-lg font-medium transition"
+          >
+            View My Projects
+          </a>
 
-        <a
-          href="https://github.com/huynhnhan254"
-          target="_blank"
-          class="px-6 py-3 border border-slate-700 hover:border-slate-500 rounded-lg font-medium transition"
-        >
-          GitHub
-        </a>
+          <a
+            href="https://github.com/huynhnhan254"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-6 py-3 border border-slate-700 hover:border-slate-500 rounded-lg font-medium transition"
+          >
+            GitHub
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- Technologies -->
+
+      <div class="mt-16 flex flex-wrap gap-3 text-sm text-slate-400">
+
+        <span class="tech-pill">Java</span>
+        <span class="tech-pill">Spring Boot</span>
+        <span class="tech-pill">REST APIs</span>
+        <span class="tech-pill">C++</span>
+        <span class="tech-pill">MySQL</span>
 
       </div>
 
     </div>
 
-    <div class="mt-16 flex flex-wrap gap-3 text-sm text-slate-400">
-
-      <span class="px-4 py-2 bg-slate-900 border border-slate-800 rounded-full">
-        Java
-      </span>
-
-      <span class="px-4 py-2 bg-slate-900 border border-slate-800 rounded-full">
-        Spring Boot
-      </span>
-
-      <span class="px-4 py-2 bg-slate-900 border border-slate-800 rounded-full">
-        REST APIs
-      </span>
-
-      <span class="px-4 py-2 bg-slate-900 border border-slate-800 rounded-full">
-        C++
-      </span>
-
-      <span class="px-4 py-2 bg-slate-900 border border-slate-800 rounded-full">
-        MySQL
-      </span>
-
-    </div>
-
-  </div>
-
-</section>
+  </section>
 
 
-<!-- ================= ABOUT ================= -->
+  <!-- ================= ABOUT ================= -->
 
-<section id="about" class="py-24 bg-white">
+  <section id="about" class="py-24 bg-white">
 
-  <div class="max-w-5xl mx-auto px-6">
+    <div class="max-w-5xl mx-auto px-6">
 
-    <div class="max-w-3xl">
+      <div class="max-w-3xl">
 
-      <p class="text-blue-600 font-semibold text-sm uppercase tracking-wider mb-3">
-        About Me
-      </p>
+        <p class="section-label">
+          About Me
+        </p>
 
-      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-        Focused on building software that is clean, reliable, and maintainable.
-      </h2>
+        <h2 class="section-title">
+          Focused on building software that is clean, reliable, and maintainable.
+        </h2>
 
-      <p class="text-lg text-slate-600 leading-relaxed">
-        I am a Computer Science graduate from DePaul University specializing
-        in backend development and software architecture.
-      </p>
+        <p class="body-text">
+          I am a Computer Science graduate from DePaul University specializing
+          in backend development and software architecture.
+        </p>
 
-      <p class="text-lg text-slate-600 leading-relaxed mt-4">
-        My experience includes building RESTful APIs with Java and Spring Boot,
-        implementing authentication with Spring Security and JWT, designing
-        database-driven applications, and working with layered architectures.
-      </p>
+        <p class="body-text mt-4">
+          My experience includes building RESTful APIs with Java and Spring Boot,
+          implementing authentication with Spring Security and JWT, designing
+          database-driven applications, and working with layered architectures.
+        </p>
 
-      <p class="text-lg text-slate-600 leading-relaxed mt-4">
-        I enjoy solving system-level problems, learning new technologies,
-        and improving software quality through clean design and testing.
-      </p>
+        <p class="body-text mt-4">
+          I enjoy solving system-level problems, learning new technologies,
+          and improving software quality through clean design and testing.
+        </p>
+
+      </div>
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<!-- ================= PROJECTS ================= -->
+  <!-- ================= PROJECTS ================= -->
 
-<section id="projects" class="py-24 bg-slate-50">
+  <section id="projects" class="py-24 bg-slate-50">
 
-  <div class="max-w-6xl mx-auto px-6">
+    <div class="max-w-6xl mx-auto px-6">
 
-    <div class="mb-12">
+      <div class="mb-12">
 
-      <p class="text-blue-600 font-semibold text-sm uppercase tracking-wider mb-3">
-        Selected Work
-      </p>
+        <p class="section-label">
+          Selected Work
+        </p>
 
-      <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
-        Projects
-      </h2>
+        <h2 class="section-title">
+          Projects
+        </h2>
 
-      <p class="text-slate-600 mt-4 max-w-2xl">
-        A selection of projects demonstrating backend development,
-        object-oriented design, APIs, and full-stack development.
-      </p>
+        <p class="text-slate-600 mt-4 max-w-2xl">
+          A selection of projects demonstrating backend development,
+          object-oriented design, APIs, and full-stack development.
+        </p>
 
-    </div>
-
-
-    <div class="grid md:grid-cols-2 gap-8">
+      </div>
 
 
-      <!-- PROJECT 1 -->
+      <div class="grid md:grid-cols-2 gap-8">
 
-      <article class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden">
 
-        <div class="p-8">
+        <!-- PROJECT 1 -->
 
-          <div class="flex items-start justify-between mb-5">
+        <article class="project-card">
 
-            <div>
-              <p class="text-sm text-blue-600 font-medium mb-2">
+          <div class="p-8">
+
+            <div class="mb-5">
+
+              <p class="project-category text-blue-600">
                 FULL-STACK APPLICATION
               </p>
 
-              <h3 class="text-2xl font-bold text-slate-900">
+              <h3 class="project-title">
                 Heartbeat
               </h3>
+
             </div>
 
-          </div>
+            <p class="body-text mb-6">
+              Built backend services using Spring Boot with a layered
+              Controller, Service, Repository, and DTO architecture.
+              Designed REST APIs integrated with a Flutter frontend.
+            </p>
 
-          <p class="text-slate-600 leading-relaxed mb-6">
-            Built backend services using Spring Boot with a layered
-            Controller, Service, Repository, and DTO architecture.
-            Designed REST APIs integrated with a Flutter frontend.
-          </p>
+            <p class="body-text mb-6">
+              Implemented JWT-based authentication and authorization
+              using Spring Security and developed mock API services
+              to simulate third-party dependencies during development.
+            </p>
 
-          <p class="text-slate-600 leading-relaxed mb-6">
-            Implemented JWT-based authentication and authorization
-            using Spring Security and developed mock API services
-            to simulate third-party dependencies during development.
-          </p>
+            <div class="flex flex-wrap gap-2 mb-6">
 
-          <div class="flex flex-wrap gap-2 mb-6">
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Spring Boot</span>
+              <span class="skill-tag">REST API</span>
+              <span class="skill-tag">JWT</span>
+              <span class="skill-tag">Flutter</span>
 
-            <span class="skill-tag px-3 py-1 bg-slate-100 rounded-full text-sm">
-              Java
-            </span>
+            </div>
 
-            <span class="skill-tag px-3 py-1 bg-slate-100 rounded-full text-sm">
-              Spring Boot
-            </span>
-
-            <span class="skill-tag px-3 py-1 bg-slate-100 rounded-full text-sm">
-              REST API
-            </span>
-
-            <span class="skill-tag px-3 py-1 bg-slate-100 rounded-full text-sm">
-              JWT
-            </span>
-
-            <span class="skill-tag px-3 py-1 bg-slate-100 rounded-full text-sm">
-              Flutter
+            <span class="text-slate-400 text-sm">
+              Project details available upon request
             </span>
 
           </div>
 
-          <span class="text-slate-400 text-sm">
-            Project details available upon request
-          </span>
-
-        </div>
-
-      </article>
+        </article>
 
 
-      <!-- PROJECT 2 -->
+        <!-- PROJECT 2 -->
 
-      <article class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden">
+        <article class="project-card">
 
-        <div class="p-8">
+          <div class="p-8">
 
-          <div class="flex items-start justify-between mb-5">
+            <div class="mb-5">
 
-            <div>
-
-              <p class="text-sm text-indigo-600 font-medium mb-2">
+              <p class="project-category text-indigo-600">
                 WEB DEVELOPMENT
               </p>
 
-              <h3 class="text-2xl font-bold text-slate-900">
+              <h3 class="project-title">
                 E-commerce Web Store
               </h3>
 
             </div>
 
+            <p class="body-text mb-6">
+              Designed and built a responsive e-commerce website for
+              physical goods and digital artwork. Created product
+              listing pages and responsive layouts optimized for
+              desktop and mobile devices.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-6">
+
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">Responsive Design</span>
+
+            </div>
+
+            <a
+              href="https://github.com/huynhnhan254/Web-Store"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="github-link"
+            >
+              View on GitHub
+              <span>→</span>
+            </a>
+
           </div>
 
-          <p class="text-slate-600 leading-relaxed mb-6">
-            Designed and built a responsive e-commerce website for
-            physical goods and digital artwork. Created product
-            listing pages and responsive layouts optimized for
-            desktop and mobile devices.
-          </p>
-
-          <div class="flex flex-wrap gap-2 mb-6">
-
-            <span class="skill-tag px-3 py-1 bg-slate-100 rounded-full text-sm">
-              HTML
-            </span>
-
-            <span class="skill-tag px-3 py-1 bg-slate-100 rounded-full text-sm">
-              CSS
-            </span>
-
-            <span class="skill-tag px-3 py-1 bg-slate-100 rounded-full text-sm">
-              Responsive Design
-            </span>
-
-          </div>
-
-          <a
-            href="https://github.com/huynhnhan254/Web-Store"
-            target="_blank"
-            class="inline-flex items-center text-blue-600 font-medium hover:text-blue-800 transition"
-          >
-            View on GitHub
-            <span class="ml-2">→</span>
-          </a>
-
-        </div>
-
-      </article>
+        </article>
 
 
-      <!-- PROJECT 3 -->
+        <!-- PROJECT 3 -->
 
-      <article class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden md:col-span-2">
+        <article class="project-card md:col-span-2">
 
-        <div class="p-8">
+          <div class="p-8">
 
-          <div class="flex items-start justify-between mb-5">
+            <div class="mb-5">
 
-            <div>
-
-              <p class="text-sm text-violet-600 font-medium mb-2">
+              <p class="project-category text-violet-600">
                 JAVA • OBJECT-ORIENTED DESIGN
               </p>
 
-              <h3 class="text-2xl font-bold text-slate-900">
+              <h3 class="project-title">
                 Market Publication System
               </h3>
 
             </div>
 
-          </div>
 
-          <div class="grid md:grid-cols-2 gap-8">
+            <div class="grid md:grid-cols-2 gap-8">
 
-            <div>
+              <div>
 
-              <p class="text-slate-600 leading-relaxed">
-                Designed a market data publishing system using Java
-                and object-oriented design patterns including Observer
-                and Singleton.
-              </p>
+                <p class="body-text">
+                  Designed a market data publishing system using Java
+                  and object-oriented design patterns including Observer
+                  and Singleton.
+                </p>
 
-              <p class="text-slate-600 leading-relaxed mt-4">
-                Built backend components for tracking and broadcasting
-                price and volume updates through subscription-based
-                delivery.
-              </p>
+                <p class="body-text mt-4">
+                  Built backend components for tracking and broadcasting
+                  price and volume updates through subscription-based
+                  delivery.
+                </p>
+
+              </div>
+
+
+              <div>
+
+                <p class="body-text">
+                  Focused on modular architecture and event-driven
+                  communication to create a system that can be extended
+                  as additional market data sources and subscribers
+                  are introduced.
+                </p>
+
+              </div>
 
             </div>
 
-            <div>
 
-              <p class="text-slate-600 leading-relaxed">
-                Focused on modular architecture and event-driven
-                communication to create a system that can be extended
-                as additional market data sources and subscribers
-                are introduced.
-              </p>
+            <div class="flex flex-wrap gap-2 mt-6 mb-6">
+
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">OOP</span>
+              <span class="skill-tag">Observer Pattern</span>
+              <span class="skill-tag">Singleton Pattern</span>
+              <span class="skill-tag">Event-Driven Design</span>
 
             </div>
 
-          </div>
 
-          <div class="flex flex-wrap gap-2 mt-6 mb-6">
-
-            <span class="skill-tag px-3 py-1 bg-slate-100 rounded-full text-sm">
-              Java
-            </span>
-
-            <span class="skill-tag px-3 py-1 bg-slate-100 rounded-full text-sm">
-              OOP
-            </span>
-
-            <span class="skill-tag px-3 py-1 bg-slate-100 rounded-full text-sm">
-              Observer Pattern
-            </span>
-
-            <span class="skill-tag px-3 py-1 bg-slate-100 rounded-full text-sm">
-              Singleton Pattern
-            </span>
-
-            <span class="skill-tag px-3 py-1 bg-slate-100 rounded-full text-sm">
-              Event-Driven Design
-            </span>
+            <a
+              href="https://github.com/huynhnhan254/Tracking-Trader-Project/tree/main"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="github-link"
+            >
+              View on GitHub
+              <span>→</span>
+            </a>
 
           </div>
 
-          <a
-            href="https://github.com/huynhnhan254/Tracking-Trader-Project/tree/main"
-            target="_blank"
-            class="inline-flex items-center text-blue-600 font-medium hover:text-blue-800 transition"
-          >
-            View on GitHub
-            <span class="ml-2">→</span>
-          </a>
+        </article>
 
-        </div>
-
-      </article>
+      </div>
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<!-- ================= SKILLS ================= -->
+  <!-- ================= SKILLS ================= -->
 
-<section id="skills" class="py-24 bg-white">
+  <section id="skills" class="py-24 bg-white">
 
-  <div class="max-w-6xl mx-auto px-6">
+    <div class="max-w-6xl mx-auto px-6">
 
-    <div class="mb-12">
+      <div class="mb-12">
 
-      <p class="text-blue-600 font-semibold text-sm uppercase tracking-wider mb-3">
-        Technical Skills
+        <p class="section-label">
+          Technical Skills
+        </p>
+
+        <h2 class="section-title">
+          Technologies I Work With
+        </h2>
+
+      </div>
+
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+
+        <!-- LANGUAGES -->
+
+        <div class="skill-group">
+
+          <h3 class="skill-group-title">
+            Languages
+          </h3>
+
+          <div class="flex flex-wrap gap-2">
+
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Scala</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">SQL</span>
+
+          </div>
+
+        </div>
+
+
+        <!-- BACKEND -->
+
+        <div class="skill-group">
+
+          <h3 class="skill-group-title">
+            Backend
+          </h3>
+
+          <div class="flex flex-wrap gap-2">
+
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Spring Security</span>
+            <span class="skill-tag">JWT</span>
+            <span class="skill-tag">MySQL</span>
+
+          </div>
+
+        </div>
+
+
+        <!-- TOOLS -->
+
+        <div class="skill-group">
+
+          <h3 class="skill-group-title">
+            Tools & Practices
+          </h3>
+
+          <div class="flex flex-wrap gap-2">
+
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">JUnit</span>
+            <span class="skill-tag">Maven</span>
+            <span class="skill-tag">IntelliJ</span>
+            <span class="skill-tag">Visual Studio</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- CORE CONCEPTS -->
+
+      <div class="mt-8 core-concepts">
+
+        <h3 class="font-bold text-lg mb-4">
+          Core Concepts
+        </h3>
+
+        <div class="flex flex-wrap gap-3 text-sm">
+
+          <span class="concept-tag">
+            Object-Oriented Programming
+          </span>
+
+          <span class="concept-tag">
+            System Design
+          </span>
+
+          <span class="concept-tag">
+            Backend Architecture
+          </span>
+
+          <span class="concept-tag">
+            Design Patterns
+          </span>
+
+          <span class="concept-tag">
+            API Design
+          </span>
+
+          <span class="concept-tag">
+            Software Testing
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= CONTACT ================= -->
+
+  <section id="contact" class="py-24 bg-slate-950 text-white">
+
+    <div class="max-w-4xl mx-auto px-6 text-center">
+
+      <p class="text-blue-400 font-semibold text-sm uppercase tracking-wider mb-3">
+        Get In Touch
       </p>
 
-      <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
-        Technologies I Work With
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">
+        Let's build something useful.
       </h2>
 
-    </div>
+      <p class="text-slate-400 text-lg max-w-2xl mx-auto mb-10">
+        I am open to software engineering opportunities,
+        collaboration, and interesting technical projects.
+      </p>
 
 
-    <div class="grid md:grid-cols-3 gap-6">
+      <div class="flex flex-wrap justify-center gap-4">
 
-      <!-- Languages -->
+        <a
+          href="mailto:huynhnhan254@gmail.com"
+          class="contact-button primary-button"
+        >
+          Email Me
+        </a>
 
-      <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50">
+        <a
+          href="https://github.com/huynhnhan254"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-button secondary-button"
+        >
+          GitHub
+        </a>
 
-        <h3 class="font-bold text-lg mb-5">
-          Languages
-        </h3>
-
-        <div class="flex flex-wrap gap-2">
-
-          <span class="skill-tag px-3 py-2 bg-white rounded-lg border border-slate-200">
-            Java
-          </span>
-
-          <span class="skill-tag px-3 py-2 bg-white rounded-lg border border-slate-200">
-            C++
-          </span>
-
-          <span class="skill-tag px-3 py-2 bg-white rounded-lg border border-slate-200">
-            Scala
-          </span>
-
-          <span class="skill-tag px-3 py-2 bg-white rounded-lg border border-slate-200">
-            JavaScript
-          </span>
-
-          <span class="skill-tag px-3 py-2 bg-white rounded-lg border border-slate-200">
-            SQL
-          </span>
-
-        </div>
-
-      </div>
-
-
-      <!-- Backend -->
-
-      <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50">
-
-        <h3 class="font-bold text-lg mb-5">
-          Backend
-        </h3>
-
-        <div class="flex flex-wrap gap-2">
-
-          <span class="skill-tag px-3 py-2 bg-white rounded-lg border border-slate-200">
-            Spring Boot
-          </span>
-
-          <span class="skill-tag px-3 py-2 bg-white rounded-lg border border-slate-200">
-            REST APIs
-          </span>
-
-          <span class="skill-tag px-3 py-2 bg-white rounded-lg border border-slate-200">
-            Spring Security
-          </span>
-
-          <span class="skill-tag px-3 py-2 bg-white rounded-lg border border-slate-200">
-            JWT
-          </span>
-
-          <span class="skill-tag px-3 py-2 bg-white rounded-lg border border-slate-200">
-            MySQL
-          </span>
-
-        </div>
-
-      </div>
-
-
-      <!-- Tools -->
-
-      <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50">
-
-        <h3 class="font-bold text-lg mb-5">
-          Tools & Practices
-        </h3>
-
-        <div class="flex flex-wrap gap-2">
-
-          <span class="skill-tag px-3 py-2 bg-white rounded-lg border border-slate-200">
-            Git
-          </span>
-
-          <span class="skill-tag px-3 py-2 bg-white rounded-lg border border-slate-200">
-            JUnit
-          </span>
-
-          <span class="skill-tag px-3 py-2 bg-white rounded-lg border border-slate-200">
-            Maven
-          </span>
-
-          <span class="skill-tag px-3 py-2 bg-white rounded-lg border border-slate-200">
-            IntelliJ
-          </span>
-
-          <span class="skill-tag px-3 py-2 bg-white rounded-lg border border-slate-200">
-            Visual Studio
-          </span>
-
-        </div>
+        <a
+          href="https://www.linkedin.com/in/nhuynh299/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-button secondary-button"
+        >
+          LinkedIn
+        </a>
 
       </div>
 
     </div>
 
+  </section>
 
-    <!-- Concepts -->
 
-    <div class="mt-8 p-6 rounded-2xl bg-slate-950 text-white">
+  <!-- ================= FOOTER ================= -->
 
-      <h3 class="font-bold text-lg mb-4">
-        Core Concepts
-      </h3>
+  <footer class="bg-slate-950 border-t border-slate-800 py-8">
 
-      <div class="flex flex-wrap gap-3 text-sm">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
 
-        <span class="px-4 py-2 bg-slate-800 rounded-full">
-          Object-Oriented Programming
-        </span>
+      <p class="text-sm text-slate-500">
+        © 2026 Ngoc Nhan Huynh. All rights reserved.
+      </p>
 
-        <span class="px-4 py-2 bg-slate-800 rounded-full">
-          System Design
-        </span>
-
-        <span class="px-4 py-2 bg-slate-800 rounded-full">
-          Backend Architecture
-        </span>
-
-        <span class="px-4 py-2 bg-slate-800 rounded-full">
-          Design Patterns
-        </span>
-
-        <span class="px-4 py-2 bg-slate-800 rounded-full">
-          API Design
-        </span>
-
-        <span class="px-4 py-2 bg-slate-800 rounded-full">
-          Software Testing
-        </span>
-
-      </div>
+      <p class="text-sm text-slate-600">
+        Built with HTML & Tailwind CSS
+      </p>
 
     </div>
 
-  </div>
-
-</section>
-
-
-<!-- ================= CONTACT ================= -->
-
-<section id="contact" class="py-24 bg-slate-950 text-white">
-
-  <div class="max-w-4xl mx-auto px-6 text-center">
-
-    <p class="text-blue-400 font-semibold text-sm uppercase tracking-wider mb-3">
-      Get In Touch
-    </p>
-
-    <h2 class="text-4xl md:text-5xl font-bold mb-6">
-      Let's build something useful.
-    </h2>
-
-    <p class="text-slate-400 text-lg max-w-2xl mx-auto mb-10">
-      I am open to software engineering opportunities,
-      collaboration, and interesting technical projects.
-    </p>
-
-    <div class="flex flex-wrap justify-center gap-4">
-
-      <a
-        href="mailto:huynhnhan254@gmail.com"
-        class="px-6 py-3 bg-blue-500 hover:bg-blue-400 rounded-lg font-medium transition"
-      >
-        Email Me
-      </a>
-
-      <a
-        href="https://github.com/huynhnhan254"
-        target="_blank"
-        class="px-6 py-3 border border-slate-700 hover:border-slate-500 rounded-lg font-medium transition"
-      >
-        GitHub
-      </a>
-
-      <a
-        href="https://www.linkedin.com/in/nhuynh299/"
-        target="_blank"
-        class="px-6 py-3 border border-slate-700 hover:border-slate-500 rounded-lg font-medium transition"
-      >
-        LinkedIn
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer class="bg-slate-950 border-t border-slate-800 py-8">
-
-  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
-
-    <p class="text-sm text-slate-500">
-      © 2026 Ngoc Nhan Huynh. All rights reserved.
-    </p>
-
-    <p class="text-sm text-slate-600">
-      Built with HTML & Tailwind CSS
-    </p>
-
-  </div>
-
-</footer>
-
+  </footer>
 
 </body>
 </html>
-```

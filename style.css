@@ -1,0 +1,234 @@
+/* ========================================
+   GLOBAL
+======================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8fafc;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.gradient-text {
+  background: linear-gradient(90deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tech-pill {
+  padding: 0.5rem 1rem;
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 9999px;
+}
+
+
+/* ========================================
+   SECTION TEXT
+======================================== */
+
+.section-label {
+  color: #2563eb;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  color: #0f172a;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.body-text {
+  color: #475569;
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+
+/* ========================================
+   PROJECTS
+======================================== */
+
+.project-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+}
+
+.project-category {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.project-title {
+  color: #0f172a;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+
+/* ========================================
+   SKILLS
+======================================== */
+
+.skill-tag {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+
+  background: #f1f5f9;
+  color: #334155;
+
+  border-radius: 0.5rem;
+
+  font-size: 0.875rem;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.skill-tag:hover {
+  transform: translateY(-2px);
+  background: #e2e8f0;
+}
+
+.skill-group {
+  padding: 1.5rem;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+}
+
+.skill-group-title {
+  color: #0f172a;
+  font-size: 1.125rem;
+  font-weight: 700;
+
+  margin-bottom: 1.25rem;
+}
+
+.concept-tag {
+  padding: 0.5rem 1rem;
+
+  background: #1e293b;
+
+  border-radius: 9999px;
+}
+
+.core-concepts {
+  padding: 1.5rem;
+
+  background: #020617;
+  color: white;
+
+  border-radius: 1rem;
+}
+
+
+/* ========================================
+   GITHUB LINKS
+======================================== */
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  color: #2563eb;
+  font-weight: 500;
+
+  transition:
+    color 0.2s ease,
+    gap 0.2s ease;
+}
+
+.github-link:hover {
+  color: #1e40af;
+  gap: 0.75rem;
+}
+
+
+/* ========================================
+   CONTACT
+======================================== */
+
+.contact-button {
+  padding: 0.75rem 1.5rem;
+
+  border-radius: 0.5rem;
+
+  font-weight: 500;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.contact-button:hover {
+  transform: translateY(-2px);
+}
+
+.primary-button {
+  background: #3b82f6;
+  color: white;
+}
+
+.primary-button:hover {
+  background: #60a5fa;
+}
+
+.secondary-button {
+  border: 1px solid #334155;
+  color: white;
+}
+
+.secondary-button:hover {
+  border-color: #64748b;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+
+  .section-title {
+    font-size: 1.875rem;
+  }
+
+  .body-text {
+    font-size: 1rem;
+  }
+
+  .project-title {
+    font-size: 1.375rem;
+  }
+
+}
