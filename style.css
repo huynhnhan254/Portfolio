@@ -7,7 +7,56 @@ html {
 }
 
 body {
-  background: #f8fafc;
+  background: var(--background);
+  color: var(--text-primary);
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+:root {
+  --background: #f8fafc;
+  --surface: #ffffff;
+  --surface-secondary: #f1f5f9;
+
+  --border: #e2e8f0;
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+
+  --dark-surface: #020617;
+  --dark-surface-secondary: #0f172a;
+
+  --accent: #2563eb;
+  --accent-hover: #1e40af;
+}
+
+.section-bg {
+  background: var(--surface);
+}
+
+.section-bg-alt {
+  background: var(--surface-secondary);
+}
+
+/* Dark mode */
+html.dark {
+  --background: #020617;
+  --surface: #0f172a;
+  --surface-secondary: #1e293b;
+
+  --border: #334155;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+
+  --dark-surface: #020617;
+  --dark-surface-secondary: #0f172a;
+
+  --accent: #60a5fa;
+  --accent-hover: #93c5fd;
 }
 
 
@@ -34,7 +83,7 @@ body {
 ======================================== */
 
 .section-label {
-  color: #2563eb;
+  color: var(--accent);
   font-size: 0.875rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -43,7 +92,7 @@ body {
 }
 
 .section-title {
-  color: #0f172a;
+  color: var(--text-primary);
   font-size: 2.25rem;
   line-height: 1.2;
   font-weight: 700;
@@ -51,7 +100,7 @@ body {
 }
 
 .body-text {
-  color: #475569;
+  color: var(--text-secondary);
   font-size: 1.125rem;
   line-height: 1.75;
 }
@@ -62,11 +111,10 @@ body {
 ======================================== */
 
 .project-card {
-  background: white;
-  border: 1px solid #e2e8f0;
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 1rem;
   overflow: hidden;
-
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
@@ -84,7 +132,7 @@ body {
 }
 
 .project-title {
-  color: #0f172a;
+  color: var(--text-primary);
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -97,14 +145,10 @@ body {
 .skill-tag {
   display: inline-block;
   padding: 0.5rem 0.75rem;
-
-  background: #f1f5f9;
-  color: #334155;
-
+  background: var(--surface-secondary);
+  color: var(--text-secondary);
   border-radius: 0.5rem;
-
   font-size: 0.875rem;
-
   transition:
     transform 0.2s ease,
     background-color 0.2s ease;
@@ -112,40 +156,33 @@ body {
 
 .skill-tag:hover {
   transform: translateY(-2px);
-  background: #e2e8f0;
+  background: var(--border);
 }
 
 .skill-group {
   padding: 1.5rem;
-
-  background: #f8fafc;
-
-  border: 1px solid #e2e8f0;
+  background: var(--background);
+  border: 1px solid var(--border);
   border-radius: 1rem;
 }
 
 .skill-group-title {
-  color: #0f172a;
+  color: var(--text-primary);
   font-size: 1.125rem;
   font-weight: 700;
-
   margin-bottom: 1.25rem;
 }
 
 .concept-tag {
   padding: 0.5rem 1rem;
-
-  background: #1e293b;
-
+  background: var(--dark-surface-secondary);
   border-radius: 9999px;
 }
 
 .core-concepts {
   padding: 1.5rem;
-
-  background: #020617;
+  background: var(--dark-surface);
   color: white;
-
   border-radius: 1rem;
 }
 
@@ -158,17 +195,15 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-
-  color: #2563eb;
+  color: var(--accent);
   font-weight: 500;
-
   transition:
     color 0.2s ease,
     gap 0.2s ease;
 }
 
 .github-link:hover {
-  color: #1e40af;
+  color: var(--accent-hover);
   gap: 0.75rem;
 }
 
